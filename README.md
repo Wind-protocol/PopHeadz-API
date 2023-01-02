@@ -1,4 +1,3 @@
-# Hello SQLite (blank)
 
 This project includes a [Node.js](https://nodejs.org/en/about/) server script that uses a persistent [SQLite](https://www.sqlite.org) database.
 
@@ -16,7 +15,9 @@ _The home route `/` lists the endpoints in the API. With the Glitch editor open 
 
 When the app runs, the scripts build the database:
 
-← `.data/chat.db`: Your database is created and placed in the `.data` folder, a hidden directory whose contents aren’t copied when a project is remixed. You can see the data in the Glitch Log when the scripts first execute.
+← `.data/popheadz.db`: Your database is created and placed in the `.data` folder, a hidden directory whose contents aren’t copied when a project is remixed. You can see the data in the Glitch Log when the scripts first execute.
+
+-You can seed a new SQLite DB from the PopHeadz.csv file
 
 ← `package.json`: The NPM packages for your project's dependencies.
 
@@ -35,22 +36,6 @@ To set your app up to support auth:
 
 You can make requests to the API using curl on the command line or from any API client. Grab your API base URL when you remix the project–you can get it by clicking __Show__.
 
-The following outline indicates requirements for each endpoint:
-
-* `GET /messages`
-* `POST /message` 🔒
-  * Include a request __Body__ with a property named `message`
-* `PUT /message` 🔒
-  * Include a request __Body__ with properties `id` and `message`
-* `DELETE /message` 🔒
-  * Include a query parameter named `id`
-
-🔒 For endpoints requiring auth:
-* Include your admin key value from the `.env` in a request header named `admin_key`.
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
 
 [Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
 
