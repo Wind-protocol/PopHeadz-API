@@ -31,13 +31,3 @@ To set your app up to support auth:
 
 * In your `.env` file, find the variable named `ADMIN_KEY` and give it a text string as a value.
 * Pass the value with requests in an `admin_key` header.
-
-## Making requests
-
-You can make requests to the API using curl on the command line or from any API client. Grab your API base URL when you remix the project–you can get it by clicking __Show__.
-
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
